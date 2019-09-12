@@ -1,8 +1,0 @@
-1. pada browser terjadi refresh berulang karena pada bagian "<meta HTTP-EQUIV="REFRESH" content="0; url=/myweb/myurl">" merefesh setiap 0 detik
-2. setelah di ubah, tampilan saat setelah 5 detik akan berpindah ke google.co.id, berguna untuk search engine 
-3. fugsi tag HTML:
-        - thead merupakan inisialisasi pembuatan head pada tabel atau colom
-        - tbody merupakan inisialisasi pembuatan body pada tabel atau baris
-        - tr merupakan singkatan tabel row 
-        - th merupakan title head untuk memberi nama pada colom
-        - title description memberi isi pada baris
