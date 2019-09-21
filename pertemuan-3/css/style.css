@@ -1,0 +1,175 @@
+    body {
+        background-image: url("image.jpg");
+        background-size: 100%;
+
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "montserrat", sans-serif;
+    }
+
+    @font-face {
+        font-family: "Another danger";
+        src: url('Another_Danger-Demo.ttf');
+    }
+
+    .logo {
+        color: red;
+        line-height: 80px;
+        float: left;
+        text-transform: uppercase;
+        padding-left: 30px;
+        font-family: 'Another Danger';
+        -webkit-text-stroke: 0.001px white;
+    }
+
+    .header {
+        background: rgba(255, 255, 255, 0.418);
+        height: 80px;
+        padding: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+
+    .menu {
+        float: right;
+        line-height: 80px;
+        padding-right: 50px;
+    }
+
+    .menu a {
+        color: aliceblue;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 10px;
+        transition: 0.4s;
+    }
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        transition: 0.4s;
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .show-menu-btn {
+        float: right;
+    }
+
+    .show-menu-btn i {
+        line-height: 100px;
+    }
+
+    .menu a:hover,
+    .show-menu-btn:hover,
+    .hide-menu-btn:hover {
+        color: rgba(255, 255, 255, 0.418);
+    }
+
+    #cnk {
+        position: absolute;
+        visibility: hidden;
+        z-index: -1111;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .show-menu-btn,
+        .hide-menu-btn {
+            display: block;
+        }
+
+        .menu {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #333;
+            right: -100%;
+            left: 0;
+            top: 0;
+            text-align: center;
+            padding: 80px 0;
+            line-height: normal;
+            transition: 0.7s;
+        }
+
+        .menu a {
+            display: block;
+            padding: 20px;
+        }
+
+        .hide-menu-btn {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+
+        #cnk:checked~.menu {
+            right: 0;
+
+        }
+    }
+
+    .judul {
+        font-size: 50px;
+        color: red;
+        font-family: 'Another Danger';
+        -webkit-text-stroke: 0.001px white;
+        padding-top: 5%;
+
+    }
+
+    p {
+        padding-left: 20%;
+        padding-right: 20%;
+        color: aliceblue;
+        text-align: justify;
+        padding-top: 30px;
+    }
+
+    #footer {
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.418);
+        color: #fff;
+        bottom: 0px;
+        position: fixed;
+    }
+
+
+
+    #btnBaca {
+        cursor: pointer;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.205);
+        border: none;
+        /* opacity: 1; */
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        border-radius: 12px;
+
+    }
+
+    .imgProfil {
+        display: block;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h3 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-top: 30px;
+    }
