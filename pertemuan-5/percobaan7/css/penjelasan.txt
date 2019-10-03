@@ -1,0 +1,1 @@
+pada file operator.css menghasilkan width persen(%) yang dimana didapat dari oerasi yang di lakukan pada file operator.scss

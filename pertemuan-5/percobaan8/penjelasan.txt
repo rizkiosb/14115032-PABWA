@@ -1,0 +1,1 @@
+pada list.css menghasilkan warna pada bg berbeda sesuai yang terdapat pada list.scss
