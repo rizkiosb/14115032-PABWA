@@ -27,17 +27,30 @@
 	<div class="col-md-6">
 		<div style="padding-top:30px;">
 			<h3>Data Mahasiswa</h3>
-			<ul class="list-group">
-				<?php
-				foreach ($mahasiswa as $mhs) {
-					?>
-					<li class="list-group-item">
-						<?= $mhs['Nama']; ?>
-						<a href="<?= base_url(); ?>Home/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" onclick="return confirm('anda yakin ingin menghapus?');">Hapus</a>
-					</li>
 
-				<?php } ?>
-			</ul>
+			<table class="table table-sm">
+				<thead>
+					<tr>
+						<th scope="col">No</th>
+						<th scope="col">Nama</th>
+						<th scope="col">Nim</th>
+						<th class="col float-right">Aksi</th>
+					</tr>
+
+				</thead>
+				<tbody>
+					<?php $no = 1;
+					foreach ($mahasiswa as $mhs) {
+						?>
+						<tr>
+							<th scope="row"><?= $no++ ?></th>
+							<td><?= $mhs['Nama']; ?></td>
+							<td><?= $mhs['NIM']; ?></td>
+							<td><a href="<?= base_url(); ?>Home/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" onclick="return confirm('anda yakin ingin menghapus?');">Hapus</a></td>
+						</tr>
+					<?php } ?>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>
